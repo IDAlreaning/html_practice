@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid none;
+        }
+
+        h1,
+        h2 {
+            color: rgb(105, 6, 6);
+        }
+
+        caption,
+        a {
+            font-size: 20px;
+        }
+
+        th {
+            background-color: rgb(42, 43, 94);
+            color: rgb(255, 255, 255);
+        }
+
+        th,
+        td {
+            border: 2px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+        }
+
+        pre {
+            font-size: 15px;
+        }
+
+        header {
+            padding: 1em;
+            color: rgb(0, 0, 0);
+            clear: left;
+            text-align: center;
+        }
+
+        li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(42, 43, 94);
+        }
+
+        article {
+            border-left: 1px solid rgb(42, 43, 94);
+            padding: 1em;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Unordered lists & Ordered lists</h1>
+        </header>
+        <ul style="background-color: rgb(64, 65, 133); overflow: hidden; list-style-type: none; margin: 0; padding: 0;">
+            <li style="float: left; font-size: 20px;">
+                <a href="#1">差異點</a>
+            </li>
+            <li style="float: left; font-size: 20px;">
+                <a href="#2">Unordered lists舉例</a>
+            </li>
+            <li style="float: left; font-size: 20px;">
+                <a href="#2">Ordered lists舉例</a>
+            </li>
+        </ul>
+
+        <article>
+            <h2 id="1">Ordered lists與Unordered lists的差異</h2>
+            <table>
+                <caption>
+                    <b>Ordered lists VS Unordered lists</b>
+                </caption>
+                <tr>
+                    <th>　</th>
+                    <th>Ordered List</th>
+                    <th>Unordered List</th>
+                </tr>
+                <tr>
+                    <td>差異
+                    </td>
+                    <td>
+                        <pre>
+以&lt;ol&gt;標記開頭。
+預設標籤為數字。
+使用HTML Type來定義編號類型。
+                    </pre>
+                    </td>
+                    <td>
+                        <pre>
+以&lt;ul&gt;標記開頭。
+預設標籤為小黑點。
+使用CSS list-style-type來定義列表的項目標記。
+                </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>選擇標籤</td>
+                    <td>
+                        <pre style="color:blue;">
+type="1"：The list items will be numbered with numbers (default)
+type="A"：The list items will be numbered with uppercase letters
+type="a"：The list items will be numbered with lowercase letters
+type="I"：The list items will be numbered with uppercase roman numbers
+type="i"：The list items will be numbered with lowercase roman numbers
+                </pre>
+                    </td>
+                    <td>
+                        <pre style="color:blue;">
+disc：Sets the list item marker to a bullet (default)
+circle：Sets the list item marker to a circle
+square：Sets the list item marker to a square
+none：The list items will not be marked
+
+                    </pre>
+                    </td>
+                </tr>
+            </table>
+            <h2 id="3">Ordered lists舉例</h2>
+            <ol type="1">
+                <li>數字</li>
+            </ol>
+            <ol type="A">
+                <li>大寫字母</li>
+            </ol>
+            <ol type="a">
+                <li>小寫字母</li>
+            </ol>
+            <ol type="I">
+                <li>大寫羅馬數字</li>
+            </ol>
+            <ol type="i">
+                <li>小寫羅馬數字</li>
+            </ol>
+            <h2 id="2">Unordered lists舉例</h2>
+            <ul style="list-style-type:disc">
+                <li>小黑點</li>
+            </ul>
+            <ul style="list-style-type: circle">
+                <li>空心圓</li>
+            </ul>
+            <ul style="list-style-type: square">
+                <li>方塊</li>
+            </ul>
+            <ul style="list-style-type:none">
+                <li>無</li>
+            </ul>
+
+        </article>
+</body>
+
+</html>

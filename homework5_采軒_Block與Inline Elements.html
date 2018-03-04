@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+
+        h1,
+        h2 {
+            color: rgb(105, 6, 6);
+        }
+
+        caption,
+        a {
+            font-size: 20px;
+        }
+
+        pre {
+            font-size: 15px;
+        }
+
+        header,
+        footer {
+            padding: 1em;
+            color: rgb(105, 6, 6);
+            background-color: rgb(240, 128, 128);
+            clear: left;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(240, 82, 82);
+        }
+
+        th,
+        td {
+            border: 2px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+    <title>Inline Elements and Block-level Elements</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Inline Elements and Block-level Elements</h1>
+        </header>
+        <h2>Inline Elements VS Block-level Elements</h2>
+        <table>
+            <caption>
+                <b>Inline Elements and Block-level Elements</b>
+            </caption>
+            <tr>
+                <th>
+                    <th>Inline Elements</th>
+                    <th>Block-level Element</th>
+                </th>
+            </tr>
+            <tr>
+                <td>差異特色
+                </td>
+                <td>
+                    <pre>
+不會從新的行列上開始。
+只會根據需要的寬度，盡可能的使用空間。
+                </pre>
+                </td>
+                <td>
+                    <pre>
+是從一個新的行列開始。
+會佔用到全部可以用的寬度(width)。
+盡可能地向左和向右伸展。
+                 </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>舉例</td>
+                <td>
+                    <pre>
+&lt;span&gt;
+&lt;abbr&gt;
+&lt;br&gt;
+&lt;bdo&gt;
+&lt;small&gt;
+                </pre>
+                </td>
+                <td>
+                    <pre>
+&lt;div&gt;
+&lt;address&gt;
+&lt;h1&gt;-&lt;h6&gt;
+&lt;pre&gt;
+&lt;ul&gt;
+                </pre>
+                </td>
+            </tr>
+        </table>
+        <h2>&lt;div&gt; VS &lt;span&gt;</h2>
+        <table>
+            <caption>
+                <b>&lt;div&gt; VS &lt;span&gt;</b>
+            </caption>
+            <tr>
+                <th>　</th>
+                <th>div</th>
+                <th>span</th>
+            </tr>
+            <tr>
+                <td>差異
+                </td>
+                <td>
+                    <pre>
+&lt;div&gt;標籤定義HTML文檔中的一個division或一個section。
+&lt;div&gt;標記用於將元素分組。
+經常與CSS一起使用來布置網頁。
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+用於對內嵌元素進行分類。
+The&lt;span&gt;tag provides a way to add a hook to a part of a text or a part of a document.
+                </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>程式碼</td>
+                <td>
+                    <pre style="color:blue;">
+&lt;div style="color:white;"&gt;Hello&lt;/div&gt;
+&lt;div&gt;World&lt;/div&gt;
+                </pre>
+                </td>
+                <td>
+                    <pre style="color:blue;">
+&lt;span style="background-color:black;"&gt;Hello&lt;/span&gt;
+&lt;p&gt;My mother has &lt;span style="color:blue"&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;
+                    </pre>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <footer>
+            <b>菁英軟體工程師戰鬥營　鄒采軒　
+                <a href="https://idalreaning.wordpress.com" target="_blank">idalreaning.wordpress.com</a>
+            </b>
+        </footer>
+    </div>
+</body>
+
+</html>
