@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <link rel="stylesheet" href="./css2.css">
+</head>
+
+<body>
+    <article class="article">
+
+        <h2>Table</h2>
+        <hr>
+        <table>
+            <h3>column merge</h3>
+            <tr style="border:1px solid black">
+                <th style="text-align:center">col 1</th>
+                <th colspan="2" style="text-align:center">col 2</th>
+            </tr>
+            <tr style="border:1px solid black">
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr style="border:1px solid black">
+                <td colspan="3">total</td>
+            </tr>
+        </table>
+        <table>
+            <h3>row merge</h3>
+            <tr style="border:1px solid black">
+                <th style="text-align:center">Name:</th>
+                <th>Bill</th>
+            </tr>
+            <tr style="border:1px solid black">
+                <td rowspan="2" style="text-align:center">Skill:</td>
+                <td>HTML</td>
+            </tr>
+            <tr style="border:1px solid black">
+                <td>CSS</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+    </article>
+</body>
+
+</html>

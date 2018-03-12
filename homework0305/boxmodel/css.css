@@ -1,0 +1,67 @@
+    div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+        header,
+        footer {
+            padding: 1em;
+            color: rgb(255, 255, 255);
+            background-color: rgb(110, 77, 201);
+            clear: left;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            color: rgb(110, 77, 201);
+        }
+nav {
+    float: left;
+    max-width: 160px;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    padding-bottom: 2em;
+    padding-top: 3em;
+    margin: -10px;
+    overflow: hidden;
+}
+   
+nav li a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+article {
+    margin-left: 250px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+iframe {
+    border: 0px solid none;
+}
+
+a:link,
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: rgb(120, 68, 187);
+text-decoration: none;
+}
+.div {
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+     

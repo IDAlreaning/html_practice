@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model Index</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <h2>Width and Height of an Element</h2>
+    <p>
+        <b>In order to set the width and height of an element correctly in all browsers, you need to know how the box model
+            works.
+        </b>
+    </p>
+    <div style="border-left:3px solid green; padding:0 0 0 10px;">
+        <pre>
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350p</pre>
+    </div>
+    <br>
+    <hr>
+<pre>
+    <br>
+<b>元素的總width計算：</b>
+
+    總元素width=width+左padding+右padding+左border+右border+左margin+右margin
+        
+<b>元素的總高height計算：</b>
+        
+    總元素height=height+頂部padding+底部padding+頂部border+底部border+頂部margin+底部margin
+    </pre>
+
+
+</body>
+
+</html>

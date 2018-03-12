@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* div img {
+            float: left;
+        } */
+
+        /* 變成橫向 */
+
+        div.opacity2 {
+            opacity: 0.2;
+            filter: alpha(opacity=20);
+        }
+
+        div.opacity5 {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        div.opacity00 {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+
+        /* With RGBA color values */
+
+        div.green {
+            background: rgb(76, 175, 80);
+            padding: 10px;
+
+        }
+
+        div.first {
+            background: rgba(76, 175, 80, 0.1);
+        }
+
+        div.second {
+            background: rgba(76, 175, 80, 0.3);
+        }
+
+        div.third {
+            background: rgba(76, 175, 80, 0.6);
+        }
+
+        /* div.clear {
+            clear:left;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="opacity2">
+        <img src="../self/images/IMG_2044.JPG" alt="me" width="300px" height="300px">
+    </div>
+    <div class="opacity5">
+        <img src="../self/images/IMG_2044.JPG" alt="me" width="300px" height="300px">
+    </div>
+    <div class="opacity00">
+        <img src="../self/images/IMG_2044.JPG" alt="me" width="300px" height="300px">
+    </div>
+
+    <p>With RGBA color values:</p>
+    <div class="first green">
+        <p>10% opacity</p>
+    </div>
+    <div class="second green">
+        <p>30% opacity</p>
+    </div>
+    <div class="third green">
+        <p>60% opacity</p>
+    </div>
+    <div class="green">
+        <p>default</p>
+    </div>
+
+</body>
+
+</html>
